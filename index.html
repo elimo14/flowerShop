@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="flower">
+    <meta name="author" content="Elahe Mohseni">
+    <title>Golestan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="image/G-icon.ico">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body ng-app="app1" ng-controller="ctrlapp1">
+    <header>
+        <nav>
+            <ul class="navbaritem">
+                <li class="main">
+                    <a href="#">
+                        <img src="image/Golsetan.png" alt="Golsetan">
+                    </a>
+                </li>
+
+                <li class="golha main">
+                    گل ها<i class="fa-solid fa-caret-down"></i>
+                    <ul class="golhaul">
+                        <ul class="golhaulul">
+                            <li>نوع دیزاین:</li>
+                            <li>
+                                <a href="#">
+                                    همه گل ها
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    سبد گل
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    دسته گل
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    رز جاودان
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    باکس گل
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="golhaulul">
+                            <li>نوع گل:</li>
+                            <li>
+                                <a href="#">
+                                    گل 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">گل 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">گل 3</a>
+                            </li>
+                            <li>
+                                <a href="#">گل 4</a>
+                            </li>
+                            <li>
+                                <a href="#">گل 5</a>
+                            </li>
+                            <li>
+                                <a href="#">گل 6</a>
+                            </li>
+                            <li>
+                                <a href="#">گل 7</a>
+                            </li>
+                        </ul>
+                        <ul class="golhaulul">
+                            <li>ویژگی:</li>
+                            <li>
+                                <a href="#">ویژگی 1</a>
+                            </li>
+                            <li>
+                                <a href="#">ویژگی 2</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </li>
+
+                <li class="monasebatha main">مناسبت ها<i class="fa-solid fa-caret-down"></i>
+                    <ul class="monasebathaUl">
+                        <ul class="monasebathaUlul">
+                            <li> مناسب برای:</li>
+                            <li><a href="#"> گل تولد</a></li>
+                            <li><a href="#">گل ترحیم </a></li>
+                            <li><a href="#">گل خواستگاری </a></li>
+                            <li><a href="#">گل عاشقانه </a></li>
+                            <li><a href="#">گل عیادت</a></li>
+                        </ul>
+                        <ul class="monasebathaUlul">
+                            <li>به تفکیک قیمت :</li>
+                            <li><a href="#">گل ارزان</a></li>
+                            <li><a href="#">گل لاکچری</a></li>
+                        </ul>
+                    </ul>
+                </li>
+
+                <li class="giahan main">گیاهان<i class="fa-solid fa-caret-down"></i>
+                    <ul class="giahanUl">
+                        <ul class="giahanUlul">
+                            <li> دسته بندی گیاهان:</li>
+                            <li><a href="#">گل آپارتمانی</a></li>
+                            <li><a href="#">گل سبز</a></li>
+                            <li><a href="#">کاکتوس</a></li>
+
+                        </ul>
+                        <ul class="giahanUlul">
+                            <li>مناسب برای:</li>
+                            <li><a href="#">مناسبت 1</a></li>
+                            <li><a href="#">مناسبت 2</a></li>
+                        </ul>
+                        <ul class="giahanUlul">
+                            <li>اکسسوری</li>
+                            <li><a href="#">گلدان</a></li>
+                        </ul>
+                        <ul class="giahanUlul">
+                            <li> نوع گیاه:</li>
+                            <li><a href="#">گل ارزان</a></li>
+                            <li><a href="#">گل لاکچری</a></li>
+                        </ul>
+                    </ul>
+                </li>
+
+                <li class="hedie main">هدیه<i class="fa-solid fa-caret-down"></i>
+                    <ul class="hedieUl">
+                        <ul class="hedieUlul">
+                            <li>دسته بندی هدیه ها:</li>
+                            <li><a href="#">همه هدیه ها</a></li>
+                            <li><a href="#">رز جاودان</a></li>
+                            <li><a href="#">سبد گل</a></li>
+                        </ul>
+                    </ul>
+                </li>
+
+                <li class="main"><a href="#">خدمات باغبانی در محل</a></li>
+                <li class="main"><a href="#">گل روز پزشک</a><img src="image/doc.png" alt="doctor icon" class="ico"></li>
+                <li class="main"><a href="#">ارسال روز</a><img src="image/deliverysmall.png" alt="deliverysmall"
+                        class="ico"></li>
+                <div class="main" style="display:flex ; margin-right: 100px;">
+                    <li class="main">
+                        <a href="#">سبد خرید</a>
+                        <span>
+                            <i class="fa-solid fa-cart-shopping shop"></i>
+                        </span>
+                        <input type="text" value="0" class="counter" id="counter" disabled>
+                    </li>
+                    <li class="main"><a href="#">شماره</a></li>
+                    <li class="main"><a href="#">ورورد - ثبت نام</a></li>
+                </div>
+            </ul>
+
+
+            <span class="humbargur" >
+                <i class="fa-solid fa-bars" onclick="menu(this)"></i>
+                <ul class="menuList" id="menuList">
+                    <li class="menuListitem">
+                        گل ها<i class="fa-solid fa-caret-down"></i>
+                        <ul>
+                            <li style="color:black ;">نوع دیزاین:</li>
+                            <li>
+                                <a href="#">
+                                    همه گل ها
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    سبد گل
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    دسته گل
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    رز جاودان
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    باکس گل
+                                </a>
+                            </li>
+                        </ul>
+                        <ul >
+                            <li style="color:black ;">نوع گل:</li>
+                            <li>
+                                <a href="#">
+                                    گل 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">گل 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">گل 3</a>
+                            </li>
+                            <li>
+                                <a href="#">گل 4</a>
+                            </li>
+                            <li>
+                                <a href="#">گل 5</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li style="color:black ;">ویژگی:</li>
+                            <li>
+                                <a href="#">ویژگی 1</a>
+                            </li>
+                            <li>
+                                <a href="#">ویژگی 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menuListitem">
+                        مناسبت ها<i class="fa-solid fa-caret-down"></i>
+                        <ul>
+                            <li style="color:black ;"> مناسب برای:</li>
+                            <li><a href="#"> گل تولد</a></li>
+                            <li><a href="#">گل ترحیم </a></li>
+                            <li><a href="#">گل خواستگاری </a></li>
+                            <li><a href="#">گل عاشقانه </a></li>
+                            <li><a href="#">گل عیادت</a></li>
+                        </ul>
+                        <ul>
+                            <li style="color:black ;">به تفکیک قیمت :</li>
+                            <li><a href="#">گل ارزان</a></li>
+                            <li><a href="#">گل لاکچری</a></li>
+                        </ul>
+                     
+                    </li>
+                    <li class="menuListitem">
+                        گیاهان<i class="fa-solid fa-caret-down"></i>
+                        <ul>
+                            <li style="color:black ;"> دسته بندی گیاهان:</li>
+                            <li><a href="#">گل آپارتمانی</a></li>
+                            <li><a href="#">گل سبز</a></li>
+                            <li><a href="#">کاکتوس</a></li>
+
+                        </ul>
+                        <ul>
+                            <li style="color:black ;">مناسب برای:</li>
+                            <li><a href="#">مناسبت 1</a></li>
+                            <li><a href="#">مناسبت 2</a></li>
+                        </ul>
+                        <ul>
+                            <li style="color:black ;">اکسسوری</li>
+                            <li><a href="#">گلدان</a></li>
+                        </ul>
+                        <ul>
+                            <li style="color:black ;"> نوع گیاه:</li>
+                            <li><a href="#">گل ارزان</a></li>
+                            <li><a href="#">گل لاکچری</a></li>
+                        </ul>
+                    </li>
+                    <li class="menuListitem">
+                        هدیه<i class="fa-solid fa-caret-down"></i>
+                        <ul>
+                            <li style="color:black ;">دسته بندی هدیه ها:</li>
+                            <li><a href="#">همه هدیه ها</a></li>
+                            <li><a href="#">رز جاودان</a></li>
+                            <li><a href="#">سبد گل</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+
+
+        </nav>
+        <div class="banner1">
+            <div class="banner2">
+                <div class="banner2">
+                    <span> 20 درصد تخفیف تا سقف 20هزار تومان برای اولین خرید</span>
+                    <input type="text" id="discount" value="gs-val" class="inputbanner" disabled>
+                    <button class="buttonbanner" type="button" id="copybtn" onclick="copy()" title="کپی کنید"><i
+                            class="fa-solid fa-copy" style="color:#fff;"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section>
+        <div class="container">
+            <img src="image/golbody.png" alt="gol body">
+            <div class="textBox">
+                <h3>سورپرایز روز پزشک با گل ها و
+                    گیاهان گلستان</h3>
+                <button class="buttonBody"><a href="#">هدیه روز پزشک</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div style="display: flex ; justify-content: center;">
+            <div class="smallimge">
+                <a href="#">
+                    <img src="image/delivery.png" alt="today delivery" class="roundimage">
+                    <h3>ارسال امروز</h3>
+                </a>
+            </div>
+
+            <div class="smallimge">
+                <a href="#">
+                    <img src="image/birthday.png" alt="birthday" class="roundimage">
+                    <h3>گل تولد</h3>
+                </a>
+            </div>
+
+            <div class="smallimge">
+                <a href="#">
+                    <img src="image/bigplant.png" alt="big Plant" class="roundimage">
+                    <h3>گیاه سایز بزرگ</h3>
+                </a>
+            </div>
+
+            <div class="smallimge">
+                <a href="#">
+                    <img src="image/lucrative.png" alt="lucrative" class="roundimage">
+                    <h3>لاکچری</h3>
+                </a>
+            </div>
+
+            <div class="smallimge">
+                <a href="#">
+                    <img src="image/apartment.png" alt="apartment Plant" class="roundimage">
+                    <h3>گیاه آپارتمانی</h3>
+                </a>
+            </div>
+
+            <div class="smallimge">
+                <a href="#">
+                    <img src="image/redRose.png" alt="red Rose" class="roundimage">
+                    <h3>گل روز</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec10">
+        <div>
+            <h4 style="font-size: 32px;font-weight: 700;text-align: center;color:rgb(113, 112, 112);margin-bottom: 0%;">
+                تخفیف دار</h4>
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+        </div>
+
+        <div class="centerize">
+            <div class="bigimge" ng-repeat="item in imgArray">
+                <figure>
+                    <a href="#"><img src="{{item.src}}" alt="{{item.alt}}" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">{{item.name}}</a></figcaption>
+                    <figcaption><a href="#" class="ghemats"><del>{{item.price}}</del></a></figcaption>
+                    <figcaption><a href="#" class="ghematb">{{item.discount}}</a></figcaption>
+                    <figcaption>
+                        <button type="button" class="btnimge" onclick="buy()"><a href="#">{{item.btn}}</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img src="image/golbody2.png" alt="cover2" class="cover2">
+            <div class="textbox2" id="text1">
+                <h3>جعبه گل های خاص</h3>
+                <button type="button" class="buttonBody2"><a href="#">خرید باکس گل هدیه</a></button>
+            </div>
+            <div class="textbox2" id="text2">
+                <h3>گل و گیاه با ماندگاری بالا</h3>
+                <a href="#"><button type="button" class="buttonBody2"><a href="#">خرید انواع تراریوم</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h4 style="font-size: 32px;font-weight: 700;text-align: center;color:rgb(113, 112, 112);margin-bottom: 0%;">
+                پرفروش ترین ها</h4>
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+        </div>
+
+        <div class="centerize">
+            <div class="bigimge" ng-repeat="item in imgArray2">
+                <figure>
+                    <a href="#"><img src="{{item.src}}" alt="{{item.alt}}" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">{{item.name}}</a></figcaption>
+                    <figcaption><a href="#" class="ghemats">{{item.price}}</a></figcaption>
+                    <figcaption>
+                        <button type="button" class="btnimge" onclick="buy()"><a href="#">{{item.btn}}</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section>
+        <div>
+            <h4 style="font-size: 32px;font-weight: 700;text-align: center;color:rgb(113, 112, 112);margin-bottom: 0%;">
+                پیشنهاد گُل سِتان</h4>
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+        </div>
+
+        <div class="centerize">
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/LisiantosBox.png" alt="LisiantosBox" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">باکس گل لیسیانتوس عروس</a></figcaption>
+                    <figcaption><a href="#" class="ghematb">2897250 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/Bonsai.png" alt="Bonsai" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">بونسای جنسینگ در گلدان سفید فلزی</a></figcaption>
+                    <figcaption><a href="#" class="ghematb">2897250 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/Aramis.png" alt="Aramis" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">سبد گل آرامیس</a></figcaption>
+                    <figcaption><a href="#" class="ghematb">2897250 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/BlackSpon.png" alt="BlackSpon" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">قاشقی بلک در گلدان فلزی</a></figcaption>
+                    <figcaption><a href="#" class="ghematb">2897250 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div>
+            <h4 style="font-size: 32px;font-weight: 700;text-align: center;color:rgb(113, 112, 112);margin-bottom: 0%;">
+                گل و گیاه فصل</h4>
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+        </div>
+
+        <div class="centerize">
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/Aglonema.png" alt="Aglonema" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">آگلونما در گلدان بتن</a></figcaption>
+                    <figcaption><a href="#" class="ghematb">2897250 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/sunflower.png" alt="sunflower" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">دسته گل آفتابگردان</a></figcaption>
+                    <figcaption><a href="#" class="ghematb">2897250 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/Soda.png" alt="Soda" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">دسته گل سودا</a></figcaption>
+                    <figcaption><a href="#" class="ghematb">2897250 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/LipurpleWhite.png" alt="Lisiantos purple White" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">دسته گل لیسیانتوس بنفش و سفید</a></figcaption>
+                    <figcaption><a href="#" class="ghematb">2897250 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div>
+            <h4 style="font-size: 32px;font-weight: 700;text-align: center;color:rgb(113, 112, 112);margin-bottom: 0%;">
+                گیاهان سایز بزرگ</h4>
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+        </div>
+
+        <div class="centerize">
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/bigAforbia.png" alt="bigAforbia" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">آفوربیا اینگنس کلکسیونی ارتفاع 150</a></figcaption>
+                    <figcaption><a href="#" class="ghematb">2897250 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/giant.png" alt="giant" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">برگ انجیری غول پیکر ارتفاع110</a></figcaption>
+                    <figcaption><a href="#" class="ghemats"><del>3863000 تومان</del></a></figcaption>
+                    <figcaption><a href="#" class="ghematb">2897250 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/kalanko.png" alt="kalanko" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">کوانکولا مخملی یک تنه ارتفاع130</a></figcaption>
+                    <figcaption><a href="#" class="ghemats"><del>3863000 تومان</del></a></figcaption>
+                    <figcaption><a href="#" class="ghematb">2897250 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="bigimge">
+                <figure>
+                    <a href="#"><img src="image/Youka.png" alt="Youka" class="radiusimg"></a>
+                    <figcaption><a href="#" class="esm">یوکا 40 ساله ارتفاع 220</a></figcaption>
+                    <figcaption><a href="#" class="ghematb">3330000 تومان</a></figcaption>
+                    <figcaption><button type="button" class="btnimge"><a href="#">خرید این گیاه</a></button>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="cover3img1">
+                <div class="textbox2">
+                    <h3>خدمات گل و گیاه و تعویض خاک و گلدان</h3>
+                    <button type="button" class="buttonBody3"><a href="">دریافت خدمات باغبانی سیار</a></button>
+                </div>
+
+            </div>
+            <div class="cover3img2">
+                <div class="textbox2">
+                    <h3>مشاوره و رفع مشکلات گیاهان شما</h3>
+                    <button type="button" class="buttonBody3"><a href="">مشاوره آنلاین با گیاه پزشک</a></button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="sec10">
+        <div>
+            <h4 style="font-size: 32px;font-weight: 700;text-align: center;color:rgb(113, 112, 112);margin-bottom: 0%;">
+                خرید راحت تر وسریع تر گل و گیاه</h4>
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+        </div>
+
+        <div class="sectio10Div">
+            <div>
+                <figure>
+                    <img src="image/gol1.png" alt="c">
+                    <figcaption>
+                        <h3>1. انتخاب گل یا گیاه</h3>
+                    </figcaption>
+                    <figcaption>
+                        <p>دسته گل، سبد گل، گیاه آپارتمانی یا ... انتخاب با شماست.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="image/gol2.png" alt="c">
+                    <figcaption>
+                        <h3>2.انتخاب زمان و مکان تحویل</h3>
+                    </figcaption>
+                    <figcaption>
+                        <p>دوست دارید سفارشتان امروز یا فردا ارسال شود؟ انتخاب زمان با شما..</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="image/gol3.png" alt="c">
+                    <figcaption>
+                        <h3>3.تحویل در نهایت احترام</h3>
+                    </figcaption>
+                    <figcaption>
+                        <p>در زمان انتخابی شما تازه‌ترین گل‌ها و گیاهان را تحویل می‌دهیم.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+    <!-- Do NOT Move Any Tag In This Section -->
+    <section class="sec11">
+        <div>
+            <h4 style="font-size: 32px;font-weight: 700;text-align: center;color:rgb(113, 112, 112);margin-bottom: 0%;">
+                گل و گیاه تازه در گل فروشی آنلاین گل‌ستان
+            </h4>
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+        </div>
+
+        <div class="colcenter2">
+
+            <div class="boxa">
+                
+                    <a href="#" class="sec11a">
+                        ارسال فوری امروز
+                    </a>
+                    <a href="#" class="sec11a">
+                        گیاه آپارتمانی
+                    </a>
+                    <a href="#" class="sec11a">
+                        دسته، سبد ، باکس گل
+                    </a>
+                    <a href="#" class="sec11a">
+                        گل و گیاه ارزان
+                    </a>
+                    <a href="#" class="sec11a">
+                        گل و گیاه خاص
+                    </a>
+                    <a href="#" class="sec11a">
+                        ست هدیه
+                    </a>
+                    <a href="#" class="sec11a">
+                        گلدان
+                    </a>
+            
+            </div>
+
+
+            <p class="seeMore" id="seeMore">
+                <span onclick="seeMore()">
+                    مشاهده بیشتر
+                </span>
+            </p>
+
+
+            <div class="showmatn" id="showmatn">
+
+                <div class="matn">
+                    <p class="sec11p2">ممکن است شما به هر دلیل تصمیم به <a title="خرید گل" href="#">خرید گل</a> یا <a
+                            href="#">خرید گیاه</a>
+                        بگیرید. سعی ما در فروشگاه آنلاین گل و گیاه گُل سِتان بر این است که تا جای ممکن سرویس‌هایی ارائه
+                        کنیم
+                        تا افراد با سلیقه‌های مختلف را برای سفارش آنلاین گل راضی نگه داریم.<br /><a href="#">دسته گل‌
+                            طبیعی</a> گل سرسبد هر گل فروشی است که می‌توان از آن‌ها برای هدیه دادن، زیبا کردن خانه یا
+                        ابراز
+                        احساسات استفاده کرد. اگر یک قرار عاشقانه دارید و یا به تازگی ‌می‌خواهید یک رابطه را شروع کنید
+                        می‌توانید از <a href="#">گل‌ های رز ممتاز</a> گل فروشی اینترنتی ما به عنوان یک هدیه زیبا و
+                        لاکچری
+                        استفاده کنید.
+                    </p>
+                    <p> </p>
+                    <h2 style="font-style: normal;">ارسال گل و گیاه برای امروز</h2>
+                    <p> </p>
+                    <p class="sec11p2" style="font-style: normal; font-weight: 400; font-size: medium;">پیدا کردن هدیه
+                        مناسب
+                        در آخرین لحظات
+                        همیشه کار دشواری است. اما جای نگرانی نیست، سرویس ارسال گل روز این امکان را به شما می‌دهد تا به
+                        راحتی
+                        با <a title="خرید آنلاین گیاه" href="#">خرید آنلاین گیاه آپارتمانی</a> یا گلهای شاخه بریده از
+                        فروشگاه اینترنتی گل و گیاه در تهران ، در همان روز در کمتر از 4 ساعت سفارش خود را تحویل بگیرید.
+                        اگر
+                        قصد هدیه دادن دارید با خرید گل و گیاه، ما توسط تیم آموزش دیده گُل سِتان در نهایت احترام آنها را
+                        درب
+                        منزل هدیه گیرنده از طرف شما تقدیم خواهیم کرد. سفارش گل آنلاین تهران توسط گل‌سِتان هفت روز هفته
+                        انجام
+                        می‌شود. با این امکان می‌توانید با ارسال گل به منزل عزیزانتان آنها را هیجان‌زده کنید.
+                    </p>
+                    <p></p>
+                    <p></p>
+
+                    <h2>سفارش آنلاین گل و گیاه آپارتمانی برای هر مناسبت</h2>
+                    <p></p>
+                    <p class="sec11p2">سفارش آنلاین گل و تحویل به موقع آن باعث می‌شود هدیه دادن به مناسب‌های مختلف آسان
+                        شود.
+                        شما می‌توانید
+                        بسته به مناسبت مورد خود، یکی از محصولات ما را انتخاب کنید. اگر قرار است سالگرد ازدواجتان را جشن
+                        بگیرید، گل‌ های سالگرد ازدواج ما که با عشق توسط تیم گل فروشی اینترنتی گل‌ستان طراحی شده یک گزینه
+                        فوق
+                        العاده خواهد بود.
+                    </p>
+                    <p></p>
+                    <p></p>
+                    <p class="sec11p2">همچنین ما محصولاتی مثل گل تشکر و قدردانی داریم که می‌توانید از آن برای سپاسگزاری
+                        از
+                        اطرافیان خود
+                        استفاده کنید. اگر یکی از عزیزان شما مریض است می‌توانید با یک گل مناسب برای عیادت بیمار به بهتر
+                        شدن
+                        روحیه او کمک کنید.</p>
+                    <p></p>
+                    <p></p>
+                    <p class="sec11p2">ممکن است شما به دنبال <a href="#">خرید هدیه</a> مناسب برای تبریک به یک دوست برای
+                        موفقیت علمی او و یا ارتقای شغلی او
+                        باشید. برای این منظور <a href="#">خرید رز جاودان</a> می‌تواند بهترین گزینه برای شما باشد تا آن
+                        را
+                        با متن دلخواه خود برای او ارسال کنید.</p>
+                    <p></p>
+                    <p></p>
+                    <p>اگر برای نوشتن متن کارت پستال نیاز به راهنمایی دارید می‌توانید مطلب متن‌های مناسب برای کارت پستال
+                        را
+                        که لینک آن را در پایین سایت قرارداده‌ایم مطالعه کنید. بنابراین نگران رویدادهای مختلف زندگی خود
+                        نباشید. ما به عنوان یکی از مراکز فروش گل و گیاه در مراحل مختلف زندگی همراه شما هستیم. خرید
+                        اینترنتی
+                        گل و گیاه آپارتمانی به راحتی از طریق چند کلیک در گل‌سِتان انجام می‌شود.</p>
+                    <p> </p>
+                    <h2 style="font-style: normal; ">خرید باکس گل هدیه</h2>
+                    <p> </p>
+                    <p class="sec11p2" style="font-style: normal; font-weight: 400; font-size: medium; ">از دیگر محصولات
+                        پرطرفدار، <a title="سبد گل" href="#">سبد
+                            گل</a>‌ های زیبای ما و <a title="باکس گل" href="#">باکس گل</a> هدیه هستند که
+                        یک انتخاب مناسب برای گل تبریک تولد و یا حتی عیادت از بیمار است. ارسال گل تهران در کمتر از سه
+                        ساعت
+                        انجام می‌شود.
+                    </p>
+                    <p class="sec11p2" style="font-style: normal; font-weight: 400; font-size: medium;">فروشگاه اینترنتی
+                        گل
+                        و گیاه گل‌ستان
+                        آماده ارائه بهترین و باکیفیت ترین گل و گیاه و لاکچری‌ترین هدایا برای عزیزان شماست. فروش آنلاین
+                        گل به
+                        صورت دسته گل‌های رنگارنگ، باکس گل‌های لاکچری و سبد گل‌های زیبا انجام می‌شود.
+                    </p>
+                    <p class="sec11p2" style="font-style: normal; font-weight: 400; font-size: medium; ">ما برای خرید گل
+                        ارزان و خرید گل
+                        لاکچری، گلها و گیاهان مناسب را برای ارسال گل در تهران را فراهم نموده‌ایم. با مشاهده<a href="#">
+                            انواع گیاهان آپارتمانی با
+                            عکس</a> می توانید انتخاب راحت‌تری داشته باشید. اگر برای مناسبت خاصی هدیه‌ای تهیه کرده‌اید و
+                        تصمیم دارید در کنار آن هدیه‌ای از میان گلها و گیاهان با قیمت مناسب تهیه کنید، می‌توانید با سفارش
+                        آنلاین گل ارزان در تهران مطابق بودجه مورد نظر خود خرید کرده و کادوی خود را تکمیل کنید.
+                    </p>
+                    <p> </p>
+                    <h2>ارسال گل به تهران</h2>
+                    <p class="sec11p2">اگر تصمیم به سفارش گل در تهران در کمتر از 4 ساعت را دارید می‌توانید، با خیال
+                        آسوده
+                        برای خرید آنلاین
+                        گل و گیاه روی گل ستان حساب کنید. ما با فروش اینترنتی گل و گیاه باکیفیت و شاداب، در غیاب شما
+                        بهترین
+                        هدیه را به دست عزیزانتان می‌رسانیم. شما در هر کجای جهان که باشید می‌توانید در رویدادهای مختلف
+                        دوستان
+                        و بستگانتان در ایران ابراز محبت و ارادت کنید. ما به عنوان یکی از معتبرترین مراکز فروش اینترنتی
+                        گل و
+                        گیاه در تهران لطیف‌ترین هدایا را به انتخاب شما برای عزیزانتان ارسال می‌کنیم.
+                    </p>
+                    <h2>خدمات باغبانی</h2>
+                    <p class="sec11p2">اگر نیاز به تعویض گلدان یا خاک گیاه دارید، گیاه شما دچار بیماری شده یا رشد
+                        نمی‌کند،
+                        می توانید از
+                        خدمات باغبانی در منزل گُل سِتان استفاده کنید، اعزام سریع باغبانان دوره دیده و خبره در کوتاه‌ترین
+                        زمان ممکن صورت می‌گیرد. در تیم <a title="خدمات باغبانی" href="#">خدمات باغبانی</a> گُِل‌سِتان
+                        افرادی
+                        دارای تخصص های طراحی خانه با گیاه، مهندس متخصص گیاه پزشکی و باغبانان دوره دیده برای ارائه خدمات
+                        حضور
+                        دارند.
+                    </p>
+                    <p></p>
+                </div>
+
+                <div>
+                    <h2 class="sec11p3h2">سوالات پرتکرار شما درباره خرید گل و گیاه</h2>
+
+                    <div onclick="seeAnswer(this)">
+                        <span class="plusIco"><i class="fas fa-plus"></i></span>
+                        <span class="minesIco"><i class="fas fa-minus"></i></span>
+                        <a class="sec11p3a">هزینه ارسال گل و گیاه در گُل‌سِتان چقدر هست؟ </a>
+
+                        <div class="answerdiv">
+
+                            <p class="answer">هزینه ارسال برای محصولات بیشتر از 100 هزار تومان رایگان و برای محصولات
+                                کمتر از
+                                100 هزار تومان
+                                و رزهای جاودان، مبلغ 30 هزار تومان است.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">در گُل‌سِتان به چه مناطقی ارسال دارید؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">محدوده ارسال مجموعه گُل‌سِتان به مناطق 1 تا 8 شهرداری تهران است، اما امکان
+                            ارسال
+                            گل به سایر مناطق شهرداری تهران نیز وجود دارد، به‌این‌منظور می‌توانید از یک پیک خارج مجموعه
+                            مثل
+                            اسنپ یا اوتوپیک تپسی استفاده کنید. در این باره باید توجه داشته باشید مسئولیت گرفتن پیک بر
+                            عهده
+                            مشتری است.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">آیا در گُل‌سِتان فروش حضوری هم دارید؟</a>
+
+                    <div class="answerdiv">
+                        <p class="answer">بله، مجموعه گُل‌سِتان شنبه تا چهارشنبه از ساعت 9 الی 18 و پنحشنبه ها ساعت 9
+                            الی 13
+                            پذیرای شما عزیزان است.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">چقدر بعد از ثبت سفارش طول میکشه به دستم برسه؟</a>
+
+                    <div class="answerdiv">
+                        <p class="answer">تحویل سفارش شما به زمانی که ثبت سفارش می‌کنید و بازه تحویلی که موقع خرید محصول
+                            باز است بستگی دارد. برای مثال اگر در ساعات اولیه روز ثبت سفارش کنید امکان انتخاب 3 بازه
+                            زمانی
+                            مختلف (صبح 10 الی 13، ظهر 13 الی 17 و بعداز ظهر 17 الی 21) برای تحویل محصول خریداری شده شما
+                            وجود
+                            دارد، به طبع هر چه به ساعات پایانی روز نزدیک خواهید شد، بازه‌های زمانی تحویل سفارش کمتری
+                            برای
+                            انتخاب خواهد داشت.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">بازه های زمانی تحویل سفارش در گُل‌سِتان چه زمان‌هایی است؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">گُل‌سِتان هر روز 3 بازه زمانی ارسال دارد؛ بازه اول ساعت 10 الی 13، بازه دوم
+                            ساعت
+                            13 الی 17 و بازه سوم ساعت 17 الی 21 است.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">می‌توانم همان روز محصولم رو تحویل بگیریم؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">بله این امکان وجود دارد، شما می‌توانید در صفحه ارسال روز محصولاتی که در گلخانه
+                            گُل‌سِتان موجود است را مشاهده کرده و ثبت سفارش کنید تا همان روز به دست شما برسد.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">اگر سفارش رو زودتر از بازه زمانی اعلام شده بخوام باید چیکار کنم؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">امکان ارسال محصولات با پیک مجموعه، فقط در بازه‌‌های زمانی اعلام شده امکان‌پذیر
+                            است. درصورت تمایل برای تحویل گرفتن محصول در ساعتی خاص یا زودتر از اتمام بازه می‌توانید از یک
+                            پیک
+                            خارج مجموعه مثل اسنپ یا اتوپیک تپسی استفاده کنید. یا می‌تواند حضورا به آدر گل ستان برای
+                            دریافت
+                            محصولات مراجعه نمائید.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">اگر سفارش رو برای خارج از محدوده ارسال اعلام شده بخوام باید چیکار
+                        کنم؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">از آنجا که امکان ارسال محصولات با پیک مجموعه فقط در مناطق 1 تا 14 شهرداری
+                            تهران
+                            امکان‌پذیر است، درصورت تمایل برای تحویل گرفتن محصول خارج از محدوده‌ زمانی اعلام شده،
+                            می‌توانید
+                            از یک پیک خارج مجموعه مثل اسنپ یا اوتوپیک تپسی استفاده کنید.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">چرا قیمت برخی گلها روزانه تغییر می‌کند؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">نوسانات و تغییر قیمت روزانه بازار گل و گیاه </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">میتونم تلفنی یا از طریق واتس آپ ثبت سفارش کنم؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">بله، در موارد خاص امکان ثبت سفارش تلفنی یا از طریق واتس‌اپ وجود دارد؛
+                            به‌این‌منظور
+                            می‌توانید از طریق شماره واتس‌اپ 02191305191 برای ثبت سفارش مد نظر خود با ما در ارتباط باشید.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">قبل از ارسال محصولات، عکس آنها ارسال میشه؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">به‌دلیل حجم بالای سفارشات امکان ارسال عکس قبل از ارسال محصول وجود ندارد، اما
+                            مجموعه گُل‌سِتان این اطمینان را به شما و همه مشتریان خود می‌دهد که تمامی سفارش‌ها مطابق با
+                            عکس
+                            موجود در سایت ارسال شود. البته این نکته را نیز باید یادآوری کنیم که طبیعتا اختلاف‌های جزئی
+                            در
+                            محصول ارسالی با عکس آن در سایت، وجود خواهد داشت که این موضوع نیز طبیعی است، چون گل‌های
+                            آپارتمانی
+                            هر چه‌قدر هم به یکدیگر شبیه باشند بازهم تفاوت‌های جزئی با یکدیگر دارند.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">امکان پرداخت هزینه درب منزل هست؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">از آنجایی که تمام سفارشات بعد از مرحله پرداخت در سایت ثبت می‌شوند، آماده‌سازی
+                            سفارشات قبل از نهایی شدن سفارش مقدور نبوده و در نتیجه امکان پرداخت هزینه درب منزل وجود
+                            ندارد.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">تحویل محصول درب واحد انجام می‌شود؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">بله، تحویل محصول توسط کادر آموزش دیده مجموعه گُل‌سِتان و درب واحد شما انجام
+                            می‌شود.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">امکان ارسال شماره‌ی دلیوری هست؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">امکان ارسال شماره دلیوری‌ها به‌علت احتمال اختلال در خدمت‌رسانی وجود ندارد، شما
+                            می‌توانید از لینک پیامک شده برای شماره موبایلتان برای رهگیری استفاده نمایید و از وضعیت سفارش
+                            خود
+                            مطلع شوید.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">موجودی محصولات رو چطور باید چک کنم؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">هبرای اطلاع از موجودی محصولات می‌توانید به سایت گُل‌سِتان مراجعه کرده و برای
+                            آگاهی
+                            از محصولات روز نیز، وارد صفحه ارسال روز شوید. اگر محصول انتخابی شما امکان ارسال روز را داشت،
+                            محصول انتخابی شما همان روز به دست شما خواهد رسید، درغیراینصورت برای روزهای آتی می‌توانید
+                            اقدام
+                            به خرید محصول مورد نظرتان کنید.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">قیمت محصولات در سایت به روز هست؟ </a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">قیمت محصولات در سایت به‌روز هستند.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">آیا فاکتور به همراه سفارشات ارسال میشه؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">هبا توجه به اینکه بیشتر سفارشات برای هدیه به اشخاص ثبت می‌شوند، فاکتور به
+                            همراه
+                            هیچ یک از محصولات ارسال نخواهد شد، اما این امکان وجود دارد که به درخواست شما همراه محصولات
+                            فاکتور ارسال شود.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">اگر نخوام گیرنده متوجه بشه از طرف چه کسی ارسال شده، امکانش هست؟ در این
+                        صورت
+                        هیچ اطلاعاتی به گیرنده داده نخواهد شد!؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">بله، در صورت فعال‌سازی گزینه “ارسال بصورت ناشناس” اطلاعات سفارش‌دهنده از
+                            اطلاعات
+                            گُل‌سِتان حذف می‌شود.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">امکان گذاشتن متن دلخواهمون همراه با سفارش هست؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">بله، برای اینکار کافیست در مراحل ثبت سفارش در قسمت افزودنی‌ها، کارت پستال را
+                            انتخاب کرده و متن دلخواه خود را در کادر نمایش داده شده، وارد کنید تا متن دلخواه شما با یک
+                            کارت
+                            پستال همراه سفارش به دست تحویل گیرنده برسد. در این باره توجه داشته باشید که در متن کارت
+                            پستال
+                            امکان استفاده از ایموجی وجود ندارد.
+                        </p>
+                    </div>
+
+                </div>
+                <div onclick="seeAnswer(this)">
+                    <span class="plusIco"><i class="fas fa-plus"></i></span>
+                    <span class="minesIco"><i class="fas fa-minus"></i></span>
+                    <a class="sec11p3a">اگر گیرنده موقع تحویل نباشن چه اتفاقی میفته؟</a>
+
+                    <div class="answerdiv">
+
+                        <p class="answer">در صورت عدم حضور گیرنده، از طریق تیم پشتیبانی هماهنگی‌های لازم با فرستنده
+                            انجام
+                            خواهد شد و در صورتی که امکان تحویل فراهم نشود، دلیوری مجموعه نهایتا 20 دقیقه منتظر مانده و
+                            پس از
+                            آن محصول به مجموعه مرجوع و بعد از هماهنگی دوباره، مجددا به آدرس انتخابی شما ارسال می‌شود.
+                            توجه
+                            داشته باشید که ارسال مجدد، شامل هزینه است.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="sec10">
+        <div>
+            <a href="" class="sec12titra">
+                <h4 style="font-size: 32px;font-weight: 700;text-align: center;color:#f25757;margin-bottom: 0%;">
+                    وبلاگ
+                </h4>
+            </a>
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+            <hr class="greenline" />
+            <hr class="redline" />
+        </div>
+
+        <div class="colcenter">
+
+            <div class="blogcontainter">
+                <a href="#" class="bloga">
+                    <img src="image/blogimg1.png" alt="" class="colcenterimg">
+                    <div class="content">
+                        <h4>
+                            20 مورد از بهترین کاکتوس های بلند
+                        </h4>
+                        <p>
+                            کاکتوس های بلند و بزرگ، ظاهری متفاوت و جذاب دارند. معمولا وقتی به خرید و نگهداری از
+                            گیاهان آپارتمانی فکر می‌کنید، کمتر به یاد این نوع کاکتوس‌ها می‌افتیم. اگر اهل ریسک
+                            کردن
+                            هستید و دوست دارید گیاه متفاوتی را به خانه یا محل کار خود اضافه کنید، نگهداری از
+                            کاکتوس
+                            های بلند را امتحان کنید! این کاکتوس‌ها گوشه‌ای از طبیعت بکر را به
+                            خانه
+                            شما آورده و چشم هر بیننده‌ای را مجذوب خود می‌کنند! در
+                            این
+                            مطلب از گلفروشی گُل‌سِتان 20 مورد از بهترین کاکتوس های بلند را به شما معرفی خواهیم
+                            کرد.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="blogcontainter">
+                <a href="#" class="bloga">
+                    <img src="image/blogimg2.png" alt="" class="colcenterimg">
+                    <div class="content">
+                        <h4>
+                            راهنمای جامع نگهداری از گل حسن یوسف
+                        </h4>
+                        <p>
+                            حسن یوسف یک گیاه علفی دولپه‌ای است. این گیاه یک ریشه عمودی بلند و ضخیم دارد که توسط
+                            ریشه‌های کوچک‌تر احاطه شده و رگبرگ‌هایی شبکه مانند روی برگ‌هایش دارد. اگر در خانه
+                            خود
+                            حسن یوسف دارید یا به‌تازگی قصد خرید گیاهان آپارتمانی داشته و حسن یوسف را در لیست
+                            خرید
+                            خود قرار داده‌اید، اما روش نگهداری صحیح از حسن یوسف را نمی‌دانید، تا پایان این مطلب
+                            با
+                            گل فروشی آنلاین گُل‌سِتان همراه شده و صفر تا صد روش نگهداری گل حسن یوسف را یاد
+                            بگرید.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="blogcontainter">
+                <a href="#" class="bloga">
+                    <img src="image/blogimg3.png" alt="" class="colcenterimg">
+                    <div class="content">
+                        <h4>
+                            معرفی 9 تا از کاکتوس های برگ دار جذاب و دوست داشتنی
+                        </h4>
+                        <p>
+                            کاکتوس‌ها همیشه جذاب بوده‌اند، چه زمانی که آن‌ها را در کارتون‌های زمان کودکی
+                            می‌دیدیم، چه زمانی که به‌عنوان یک گیاه خانگی در خانه یا محل کار از آن‌ها نگهداری
+                            می‌کنیم. گیاهانی مقاوم، زیبا و سرسخت که مخصوصا برای کسانی که زمان زیادی را
+                            نمی‌توانند برای مراقبت از گیاه صرف کنند، انتخابی عالی هستند. در این مطلب از فروشگاه اینترنتی گل و گیاه
+                            گُل‌سِتان قصد داریم با هم به معرفی تعدادی از کاکتوس های برگ دار بپردازیم و با آن‌ها
+                            آشنا شویم.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <img src="image/chat.png" alt="chat"
+        style="position: fixed;bottom: 0;right: 0; margin-right: 20px;margin-bottom: 10px;z-index: 9999999999;">
+
+    <footer>
+        <div class="blueBanner">
+            <div>
+                <input class="inpEmail" id="emailSubscribe" type="text" value="" placeholder="ایمیل">
+                <button class="submitbtn" type="button">
+                    عضویت در خبرنامه
+                </button>
+            </div>
+            <div class="someText">
+                <p> شنبه تا پنجشنبه ساعت 9 الی 19&nbsp;
+                    &nbsp;|&nbsp; واتس اپ
+                    <a href="#" style="text-decoration:none ;color:#fff;">
+                        09120785191
+                    </a>
+                    &nbsp;|&nbsp; تماس
+                    <a href="#" style="text-decoration:none ;color:#fff;">
+                        02191305191
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footerWidget">
+            <div class="colWidget">
+                <div class="items">
+                    <h4 class="TitrWidget">
+                        گل ستان
+                    </h4>
+                    <ul class="TitrWidgetul">
+                        <li>
+                            <a href="#" class="aWidget">
+                                درباره ما
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                معرفی گل آرا ها
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                پیوستن به تیم ما
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                تامین کنندگان ما
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                دستورالعمل کرونا
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                تماس با ما
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                وبلاگ (مجله گل و گیاه)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="items">
+                    <ul class="IconWidget">
+                        <li class="icoWidget">
+                            <a href="" class="aWidget">
+                                <img src="image/facebook.png" alt="facebook" class="IcoimgWidget">
+                            </a>
+                        </li>
+                        <li class="icoWidget">
+                            <a href="" class="aWidget">
+                                <img src="image/twitter.png" alt="twitter" class="IcoimgWidget">
+                            </a>
+                        </li>
+                        <li class="icoWidget">
+                            <a href="" class="aWidget">
+                                <img src="image/linkdin.png" alt="linkdin" class="IcoimgWidget">
+                            </a>
+                        </li>
+                        <li class="icoWidget">
+                            <a href="" class="aWidget">
+                                <img src="image/pintrest.png" alt="pintrest" class="IcoimgWidget">
+                            </a>
+                        </li>
+                        <li class="icoWidget">
+                            <a href="" class="aWidget">
+                                <img src="image/aparat.png" alt="aparat" class="IcoimgWidget">
+                            </a>
+                        </li>
+                        <li class="icoWidget">
+                            <a href="" class="aWidget">
+                                <img src="image/telegram.png" alt="telegram" class="IcoimgWidget">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="colWidget">
+                <div class="items">
+                    <h4 class="TitrWidget">
+                        محصولات و سرویس ها
+                    </h4>
+                    <ul class="TitrWidgetul">
+                        <li>
+                            <a href="#" class="aWidget">
+                                گل شاخه بریده
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                گیاه آپارتمانی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                هدیه
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                رز جاودان
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                شکلات کادویی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                ارسال گل به ایران
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                ارسال گل به خارج
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                مشاوره آنلاین گل و گیاه
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                خدمات باغبانی در محل
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                گلدان تبلیغاتی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                طراحی دکوراسیون با گیاهان
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="colWidget">
+                <div class="items">
+                    <h4 class="TitrWidget">
+                        راهنمایی
+                    </h4>
+                    <ul class="TitrWidgetul">
+                        <li>
+                            <a href="#" class="aWidget">
+                                سوالات متداول
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                نمونه متن کارت پستال‌
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                معنی گل‌ ها
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                اسم گیاهان آپارتمانی با عکس
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                انواع گیاهان بیرونی و فضای باز
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                انواع گل شاخه بریده با عکس
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                اسم انواع کاکتوس با عکس
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                افزایش طول عمر گلها و گیاهان
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                روش پرداخت ارزی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                لیست گلفروشی‌های تهران
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aWidget">
+                                شرایط و ضوابط
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="colWidget">
+                <div class="items">
+                    <h4 class="TitrWidget">چرا ما ؟</h4>
+                    <div>
+                        <a href="#">
+                            <img src="image/telegram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Seprator Line -->
+        <div style=" margin: 20px 100px 30px 100px; border-top: 1px #d9d9d9 solid;"></div>
+
+        <div class="footerCards">
+            <a href="#" class="">
+                <img src="image/cards.png" alt="payment cards">
+            </a>
+            <p>
+                استفاده از مطالب گل فروشی اینترنتی گُل‌سِتان تنها برای مقاصد غیر تجاری و با ذکر منبع بلامانع است. کلیه
+                حقوق این سایت متعلق به شرکت ارزش آفرینان فردای روشن (گل فروشی آنلاین گُل‌ستان) است.
+                <!-- © -->&copy;
+            </p>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="javaScripts/angular.min.js"></script>
+    <script src="javaScripts/index.js"></script>
+    <script src="javaScripts/all.js">
+    </script>
+</body>
+
+</html>
